@@ -1,10 +1,864 @@
 {
-  "seeMoreFunctionality": {
+  "Getuser":
+  {
     "runFlag": "Y",
-    "category": "Test",
-    "scenarioID": "V2S001",
-    "inputData": {
-      "id": 101
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getuserinvalidid":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+
+
+  "Postusers":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+
+
+
+
+  "Postusers_alreadyexists":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postusers_compulsory_field_not_present":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Loginuser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Loginuser_wrongcredentials":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Loginuser_fieldsnotpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getcompany":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getsuites":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getsuite_srunidnotpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_s_run_idpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_s_run_idpresentinthepayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putsuite":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putsuite_srunidnotpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Gettestexe":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Gettestexe_tcrunidnotvalid":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putexe":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putexe_srunidnotgiven":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putexe_tcrunidnotgiven":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuitess":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_srunidnotexists":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_srunidnotgiven":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuitetcnotpresentinpayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Gettoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "posttoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_health_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Get_attendance":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Get_attendance_wrongtoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Get_attendance_emptypayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_cabdetails":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_cabdetails_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_cabdetails_emptypayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_leaves_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_leaves_emptypayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_leaves":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_holidays":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_holidays_wrongtoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_holidays_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_anniversary":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_anniversary_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_anniversary_emptypayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_leavebalance":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_leavebalance_wrongtoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_leavebalance_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_leavebalance_emptypayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_Detailsbyid":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_Detailsbyid_wrongtoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_Detailsbyid_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Eligibleusers":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Eligibleusers_wrongtoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Eligibleusers_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "financialyears":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "financialyears_wrongtoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "financialyears_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "listleave":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "listleave_wrongtoken":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "listleave_wronguser":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "listleave_emptypayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "getdashboardsetting_emptypayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "getdashboardsetting_wrongpayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "getdashboardsetting":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_dashboard":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "M_login":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Apilists":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Geting":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Geting_sidnotpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postgem":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postgem_alreadypresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postgem_sid_notpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgem":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgem_sidnotpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getsuite":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getsuite_tcrunidnotpresent":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_Function_srunidnotexists":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_Function_srunidnotpresentinpayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_Function_uniquetcrunid":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postsuite_Function_tcrunidnotpresentinpayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgem_tcrunidnotpresentindatabase":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgem_srunidnotpresentinpayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgem_tcrunidnotpresentinpayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgem_sandtcrunidnotpresentinpayload":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getsuitereport":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgemreport":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Postgemwd":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "put_function":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Putgem":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Healthchecktesting08":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
+    }
+  },
+  "Getsuite":
+  {
+    "runFlag": "Y",
+    "category": "test",
+    "scenarioID" : "V2S001",
+    "inputData" : {
+      "id": 1234
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
