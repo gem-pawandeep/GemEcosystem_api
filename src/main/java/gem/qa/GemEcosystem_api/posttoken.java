@@ -3,12 +3,10 @@ package gem.qa.GemEcosystem_api;
 import com.gemini.generic.QuanticAPIBase;
 import com.gemini.apitest.ApiClientConnect;
 import com.gemini.apitest.ProjectApiUrl;
-
 import com.gemini.dataProvider.QuanticDataProvider;
 import com.gemini.quartzReporting.GemTestReporter;
 import com.gemini.quartzReporting.STATUS;
 import com.google.gson.JsonObject;
-
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -27,12 +25,12 @@ public class posttoken extends QuanticAPIBase {
 
         JsonObject res = null;
 
-        Map<String,String> headers=new HashMap<>();
-        headers.put("Authorization","Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYWdhaGF2LnN1bmVqYSIsImlhdCI6MTY1NjU5MTE5MSwiZXhwIjoxNjU2NTkxNDkxfQ.vFGssTb1CnGNM2cYZTNUNCKrVMFKaYwa2QoMhZ80AOUi3Elx78E_PRagwTqI1E9TaUAde0NPJ113pfFEuOUlmw");
+        Map<String, String> headers = new HashMap<>();
+        headers.put("Authorization", "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYWdhaGF2LnN1bmVqYSIsImlhdCI6MTY1NjU5MTE5MSwiZXhwIjoxNjU2NTkxNDkxfQ.vFGssTb1CnGNM2cYZTNUNCKrVMFKaYwa2QoMhZ80AOUi3Elx78E_PRagwTqI1E9TaUAde0NPJ113pfFEuOUlmw");
 
 
         try {
-            res = ApiClientConnect.postRequest(url,"","json",headers);
+            res = ApiClientConnect.postRequest(url, "", "json", headers);
             GemTestReporter.addTestStep(" Post Request Verification ", "Post Request Executed Successfully", STATUS.PASS);
         } catch (Exception e) {
             GemTestReporter.addTestStep(" Post Request Verification ", "Post Request Did not Executed Successfully", STATUS.FAIL);
@@ -57,16 +55,10 @@ public class posttoken extends QuanticAPIBase {
             GemTestReporter.addTestStep("Final response", "No response", STATUS.FAIL);
 
 
-
         }
 
 
-
     }
-
-
-
-
 
 
 }

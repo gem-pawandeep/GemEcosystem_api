@@ -1,24 +1,11 @@
 package gem.qa.GemEcosystem_api;
 
 import com.gemini.generic.QuanticAPIBase;
-import com.gemini.apitest.ApiHealthCheckUtils;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.gemini.apitest.ApiClientConnect;
 import com.gemini.apitest.ProjectApiUrl;
-import com.gemini.apitest.ProjectSampleJson;
-
 import com.gemini.dataProvider.QuanticDataProvider;
-import com.gemini.generic.QuanticAPIBase;
 import com.gemini.quartzReporting.GemTestReporter;
 import com.gemini.quartzReporting.STATUS;
-import com.google.gson.JsonObject;
-
-import io.cucumber.java.ca.Quan;
-import jdk.jshell.Snippet;
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
-
 import com.google.gson.JsonObject;
 import org.testng.annotations.Test;
 
@@ -109,9 +96,7 @@ public class Testex extends QuanticAPIBase {
 
             }
 
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Something Wrong happened ");
         }

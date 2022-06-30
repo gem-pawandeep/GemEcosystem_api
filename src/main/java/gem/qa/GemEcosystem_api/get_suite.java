@@ -1,26 +1,14 @@
 package gem.qa.GemEcosystem_api;
 
 import com.gemini.generic.QuanticAPIBase;
-import com.gemini.apitest.ApiHealthCheckUtils;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.gemini.apitest.ApiClientConnect;
 import com.gemini.apitest.ProjectApiUrl;
-import com.gemini.apitest.ProjectSampleJson;
-
 import com.gemini.dataProvider.QuanticDataProvider;
-import com.gemini.generic.QuanticAPIBase;
 import com.gemini.quartzReporting.GemTestReporter;
 import com.gemini.quartzReporting.STATUS;
 import com.google.gson.JsonObject;
-
-import io.cucumber.java.ca.Quan;
-import jdk.jshell.Snippet;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.google.gson.JsonObject;
-import org.testng.annotations.Test;
 public class get_suite extends QuanticAPIBase {
     @Test(dataProvider = "QuanticDataProvider", dataProviderClass = QuanticDataProvider.class)
     public void Getsuites(JsonObject inputData) {
@@ -54,13 +42,11 @@ public class get_suite extends QuanticAPIBase {
             GemTestReporter.addTestStep("Final Message ", String.valueOf(message), STATUS.PASS);
 
         } else {
-            JsonObject bo=res.get("responseError").getAsJsonObject();
+            JsonObject bo = res.get("responseError").getAsJsonObject();
             GemTestReporter.addTestStep("Final response", String.valueOf(bo), STATUS.FAIL);
 
 
-
         }
-
 
 
     }
@@ -86,14 +72,12 @@ public class get_suite extends QuanticAPIBase {
         int status = res.get("status").getAsInt();
 
         GemTestReporter.addTestStep("Status ", String.valueOf(status), STATUS.INFO);
-        if (status==400)
-        {
-            JsonObject bo=res.get("responseError").getAsJsonObject();
+        if (status == 400) {
+            JsonObject bo = res.get("responseError").getAsJsonObject();
             GemTestReporter.addTestStep("Final response", String.valueOf(bo), STATUS.PASS);
-            String Message=bo.get("message").getAsString();
+            String Message = bo.get("message").getAsString();
             GemTestReporter.addTestStep("Final Message", String.valueOf(Message), STATUS.PASS);
-        }
-        else if (status == 200) {
+        } else if (status == 200) {
             GemTestReporter.addTestStep("Status Verification", "Expected Status : 400", STATUS.FAIL);
             JsonObject body = res.get("responseBody").getAsJsonObject();
             GemTestReporter.addTestStep("Response After hitting the API ", String.valueOf(body), STATUS.INFO);
@@ -104,17 +88,14 @@ public class get_suite extends QuanticAPIBase {
             // GemTestReporter.addTestStep("Final Message ", String.valueOf(message), STATUS.FAIL);
 
         } else {
-            JsonObject bo=res.get("responseError").getAsJsonObject();
+            JsonObject bo = res.get("responseError").getAsJsonObject();
             GemTestReporter.addTestStep("Final response", String.valueOf(bo), STATUS.FAIL);
-
 
 
         }
 
 
-
     }
-
 
 
 }

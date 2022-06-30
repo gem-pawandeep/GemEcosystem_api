@@ -2,22 +2,14 @@ package gem.qa.GemEcosystem_api;
 
 import com.gemini.apitest.ApiClientConnect;
 import com.gemini.apitest.ProjectApiUrl;
-
 import com.gemini.dataProvider.QuanticDataProvider;
 import com.gemini.generic.QuanticAPIBase;
 import com.gemini.quartzReporting.GemTestReporter;
 import com.gemini.quartzReporting.STATUS;
 import com.google.gson.JsonObject;
-
 import org.testng.annotations.Test;
 
 public class Getuser extends QuanticAPIBase {
-
-   /* @Test(dataProvider = "QuanticDataProvider", dataProviderClass = QuanticDataProvider.class)
-    public void Putgem_tcrunidnotpresentindatabase(JsonObject inputData) {
-
-
-    }*/
 
 
     @Test(dataProvider = "QuanticDataProvider", dataProviderClass = QuanticDataProvider.class)
@@ -52,13 +44,11 @@ public class Getuser extends QuanticAPIBase {
             GemTestReporter.addTestStep("Final Message ", String.valueOf(message), STATUS.PASS);
 
         } else {
-            JsonObject bo=res.get("responseError").getAsJsonObject();
+            JsonObject bo = res.get("responseError").getAsJsonObject();
             GemTestReporter.addTestStep("Final response", String.valueOf(bo), STATUS.FAIL);
 
 
-
         }
-
 
 
     }
@@ -96,17 +86,14 @@ public class Getuser extends QuanticAPIBase {
             GemTestReporter.addTestStep("Final Message ", String.valueOf(message), STATUS.PASS);
 
         } else {
-            JsonObject bo=res.get("responseError").getAsJsonObject();
+            JsonObject bo = res.get("responseError").getAsJsonObject();
             GemTestReporter.addTestStep("Final response", String.valueOf(bo), STATUS.FAIL);
-
 
 
         }
 
 
-
     }
-
 
 
 }

@@ -1,29 +1,15 @@
 package gem.qa.GemEcosystem_api;
 
 import com.gemini.generic.QuanticAPIBase;
-import io.cucumber.java.ca.Quan;
-import com.gemini.apitest.ApiHealthCheckUtils;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.gemini.apitest.ApiClientConnect;
 import com.gemini.apitest.ProjectApiUrl;
-import com.gemini.apitest.ProjectSampleJson;
-
 import com.gemini.dataProvider.QuanticDataProvider;
-import com.gemini.generic.QuanticAPIBase;
 import com.gemini.quartzReporting.GemTestReporter;
 import com.gemini.quartzReporting.STATUS;
 import com.google.gson.JsonObject;
-
-import jdk.jshell.Snippet;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.google.gson.JsonObject;
-import org.testng.annotations.Test;
-
-
-public class Getcompany extends QuanticAPIBase{
+public class Getcompany extends QuanticAPIBase {
     @Test(dataProvider = "QuanticDataProvider", dataProviderClass = QuanticDataProvider.class)
     public void Getcompany(JsonObject inputData) {
         GemTestReporter.addTestStep("Test Case", "Test to check the Get Company API ", STATUS.INFO);
@@ -56,17 +42,14 @@ public class Getcompany extends QuanticAPIBase{
             GemTestReporter.addTestStep("Final Message ", String.valueOf(message), STATUS.PASS);
 
         } else {
-            JsonObject bo=res.get("responseError").getAsJsonObject();
+            JsonObject bo = res.get("responseError").getAsJsonObject();
             GemTestReporter.addTestStep("Final response", String.valueOf(bo), STATUS.FAIL);
-
 
 
         }
 
 
-
     }
-
 
 
 }

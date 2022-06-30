@@ -1,24 +1,11 @@
 package gem.qa.GemEcosystem_api;
 
 import com.gemini.generic.QuanticAPIBase;
-import io.cucumber.java.ca.Quan;
-import com.gemini.apitest.ApiHealthCheckUtils;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.gemini.apitest.ApiClientConnect;
 import com.gemini.apitest.ProjectApiUrl;
-import com.gemini.apitest.ProjectSampleJson;
-
 import com.gemini.dataProvider.QuanticDataProvider;
-import com.gemini.generic.QuanticAPIBase;
 import com.gemini.quartzReporting.GemTestReporter;
 import com.gemini.quartzReporting.STATUS;
-import com.google.gson.JsonObject;
-
-import jdk.jshell.Snippet;
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
-
 import com.google.gson.JsonObject;
 import org.testng.annotations.Test;
 
@@ -37,10 +24,10 @@ public class gettoken extends QuanticAPIBase {
         GemTestReporter.addTestStep("Url for Get Request", url, STATUS.INFO);
 
         JsonObject res = null;
-        Map<String,String> headers=new HashMap<>();
-        headers.put("Authorization","Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYWdhaGF2LnN1bmVqYSIsImlhdCI6MTY1NjU5MDc0NSwiZXhwIjoxNjU2NTkxMDQ1fQ.ZHGhUyhjFGrNKvz9p0xQRQ67wTYdMTFMARrm4ot8XuHosOC0IBlSSIPARgiuDOp4CLQEQHE80weQcYuAJvdpUw");
+        Map<String, String> headers = new HashMap<>();
+        headers.put("Authorization", "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYWdhaGF2LnN1bmVqYSIsImlhdCI6MTY1NjU5MDc0NSwiZXhwIjoxNjU2NTkxMDQ1fQ.ZHGhUyhjFGrNKvz9p0xQRQ67wTYdMTFMARrm4ot8XuHosOC0IBlSSIPARgiuDOp4CLQEQHE80weQcYuAJvdpUw");
         try {
-            res = ApiClientConnect.createRequest("Get",url,"",headers);
+            res = ApiClientConnect.createRequest("Get", url, "", headers);
             GemTestReporter.addTestStep(" Get Request Verification ", "Get Request Executed Successfully", STATUS.PASS);
         } catch (Exception e) {
             GemTestReporter.addTestStep(" Get Request Verification ", "Get Request Did not Executed Successfully", STATUS.FAIL);
@@ -65,16 +52,10 @@ public class gettoken extends QuanticAPIBase {
             GemTestReporter.addTestStep("Final response", "No response", STATUS.FAIL);
 
 
-
         }
 
 
-
     }
-
-
-
-
 
 
 }
